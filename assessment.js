@@ -93,10 +93,10 @@ function addItem(arr, item) {
 // Removes all instances of that string from the array. And return the modified array.
 // The order of the array should not be changed
 function removeItem(arr, str) {
-	for (var i = 0; i < arr.length; i++) {
+	for (var i = arr.length -1; i >= 0; i--) {
 		if (arr[i] === str) {
-			arr.splice(arr[i], 1);
-			i--;
+			arr.splice(i, 1);
+
 		}
 	}return arr;
 }
@@ -122,11 +122,11 @@ function getValueOfProperty(obj, name) {
 // and returns an object with a message, author, and timestamp, that is
 // the current time as a Date object
 function makeChatMessage(mess, auth) {
-	var currentTime = new Date();
+	// var currentTime = new Date();
 	var result = {
 		message: mess,
 		author: auth,
-		time: currentTime
+		timestamp: new Date()
 	};
 	return result;
 }
