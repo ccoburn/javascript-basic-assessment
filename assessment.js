@@ -1,10 +1,11 @@
 
 // #1 Create a variable called hello and assign it the string 'goodbye'
-
+var hello = 'goodbye';
 
 
 // #2 Use the variable iLove to create a new variable called iLoveCode that is assigned the string "I love code"
 var iLove = 'I love';
+var iLoveCode = iLove + " code";
 
 // #3  Make an object called bob and give it the following properties
 // bob has a height of 6ft (string)
@@ -12,24 +13,39 @@ var iLove = 'I love';
 // bob has hair, that has style spikey, and color brown (object)
 // bob is not presidentOfTheUnitedStates (boolean)
 // bob likes apples, bananas, and cherries (array of strings)
-
+var bob = {
+	height: "6ft",
+	age: 24,
+	hair: {
+		style: 'spikey',
+		color: 'brown'
+	},
+	presidentOfTheUnitedStates: false,
+	likes: ['apples', 'bananas', 'cherries']
+};
 
 // #4 Change my shirt color to pink using dot notation
 var myShirt = {
 	type: 'polo',
 	color: 'red'
 };
+myShirt.color = 'pink';
 
 // Change my shirt type to spandex using square bracket notation
 var myOtherShirt = {
 	type: 'polo',
 	color: 'red'
 };
+myOtherShirt['type'] = 'spandex';
 
 // #5 Create an object that tracks a count of animals in a zoo.  Call it 'zoo'
 // The key should be the animal name(string) and the value should be how many there are.
 // Our zoo has 8 monkeys, 4 giraffes and 2 elephants
-
+var zoo = {
+	monkeys: 8,
+	giraffes: 4,
+	elephants: 2
+};
 
 // #6 Loop through this object and change all keys that start with the letter s to have a value of 's'
 
@@ -94,4 +110,3 @@ var heroes = ['superman', 'batman', 'flash'];
 
 // #16 Create a function called callerBack that takes in a function (holla) and a string parameter(back) and invokes it(holla) with the argument string(back) + ' back'."
 // example - If I call you with 'Give it' you should invoke holla with 'Give it back'
-
